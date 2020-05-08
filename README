@@ -1,6 +1,12 @@
-st - simple terminal
+st - simple terminal (menganha's fork)
 --------------------
 st is a simple terminal emulator for X which sucks less.
+
+This fork includes the alpha patch for transparency plus a config
+with the following features:
+    - Jetbrain fonts specification with antialiasing and hinting
+    - Gruvbox color theme
+    - Changes on the default mapings for copying and pasting
 
 
 Requirements
