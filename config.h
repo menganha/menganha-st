@@ -5,7 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrains Mono:pixelsize=18:antialias=1:autohint=0:hinting=hintslight:lcdfilter=lcddefault:rgba=rgb";
+static char *font = "JetBrains Mono:pixelsize=16:antialias=1:autohint=0:hinting=hintslight:lcdfilter=lcddefault:rgba=rgb";
+static char *font2[] = {"Symbola:pixelsize=14:antialias=1:autohint=0:autohint=true"
+};
+
 static int borderpx = 5;
 
 /*
@@ -42,6 +45,10 @@ static unsigned int tripleclicktimeout = 600;
 
 /* alt screens */
 int allowaltscreen = 1;
+
+/* allow certain non-interactive (insecure) window operations such as:
+   setting the clipboard text */
+int allowwindowops = 0;
 
 /*
  * draw latency range in ms - from new content/keypress/etc until drawing.
