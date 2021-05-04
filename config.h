@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrains Mono:pixelsize=16:antialias=1:autohint=0:hinting=hintslight:lcdfilter=lcddefault:rgba=rgb";
+static char *font = "Fira Code:pixelsize=16:antialias=1:autohint=0:hinting=hintslight:lcdfilter=lcddefault:rgba=rgb";
 static char *font2[] = {"Symbola:pixelsize=14:antialias=1:autohint=0:autohint=true"
 };
 
@@ -97,36 +97,36 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 0.95;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-    "#282828",
-    "#cc241d",
-    "#98971a",
-    "#d79921",
-    "#458588",
-    "#b16286",
-    "#689d6a",
-    "#a89984",
+    "#282C34",
+    "#E06C75",
+    "#98C379",
+    "#E5C07B",
+    "#61AFEF",
+    "#C678DD",
+    "#56B6C2",
+    "#ABB2BF",
 
 	/* 8 bright colors */
-    "#928374",
-    "#fb4934",
-    "#b8bb26",
-    "#fabd2f",
-    "#83a598",
-    "#d3869b",
-    "#8ec07c",
-    "#ebdbb2",
+    "#5C6370",
+    "#BE5046",
+    "#98C379",
+    "#D19A66",
+    "#61AFEF",
+    "#C678DD",
+    "#56B6C2",
+    "#FFFFFF",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#1d2021",
-	"#555555",
-	"black",
+    "#282C34",
+    "#ABB2BF",
+    "#5C6370",
 };
 
 
@@ -134,10 +134,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 15;
 unsigned int defaultbg = 256;
-static unsigned int defaultcs = 15;
-static unsigned int defaultrcs = 257;
+unsigned int defaultfg = 257;
+static unsigned int defaultcs = 257;
+static unsigned int defaultrcs = 3;
 
 /*
  * Default shape of cursor
