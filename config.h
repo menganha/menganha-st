@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Fira Code:pixelsize=18:antialias=1:autohint=0:hinting=hintslight:lcdfilter=lcddefault:rgba=rgb";
+static char *font = "Hack:pixelsize=18:antialias=1:autohint=0:hinting=hintslight:lcdfilter=lcddefault:rgba=rgb";
 static char *font2[] = {"Symbola:pixelsize=14:antialias=1:autohint=0:autohint=true"
 };
 
