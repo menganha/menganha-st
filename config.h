@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Fira Code:pixelsize=16:antialias=1:autohint=0:hinting=hintslight:lcdfilter=lcddefault:rgba=rgb";
+static char *font = "Fira Code:pixelsize=18:antialias=1:autohint=0:hinting=hintslight:lcdfilter=lcddefault:rgba=rgb";
 static char *font2[] = {"Symbola:pixelsize=14:antialias=1:autohint=0:autohint=true"
 };
 
@@ -198,8 +198,8 @@ static Shortcut shortcuts[] = {
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-	{ ControlMask,          XK_equal,       zoom,           {.f = +2} },
-	{ ControlMask,          XK_minus,       zoom,           {.f = -2} },
+	{ ControlMask,          XK_equal,       zoom,           {.f = +1} },
+	{ ControlMask,          XK_minus,       zoom,           {.f = -1} },
 	{ ControlMask,          XK_0,           zoomreset,      {.f =  0} },
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
